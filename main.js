@@ -15,7 +15,7 @@ casper
   .thenEvaluate(function() {
     document.body.bgColor = 'white';
   })
-  .then(function() {
+  .wait(2000, function() {
     var ts = Date.now()
     var filepath = 'screenshots/' + ts + '.png';
     this.capture(filepath);
